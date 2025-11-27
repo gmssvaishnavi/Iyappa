@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ஐயப்பன் கோஷம்</title>
+  <base href="/Iyappa/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script>
+    // Store the full path that led to the 404 page in sessionStorage.
+    // This allows the main application to redirect to the correct route.
+    sessionStorage.setItem('redirect', location.href);
+  </script>
+  
+  <!-- Immediately redirect to the base URL of the application -->
+  <meta http-equiv="refresh" content="0;URL='/Iyappa/'">
+</head>
+<body>
+  <!-- This message is displayed if the redirect fails -->
+  <p>If you are not redirected automatically, please <a href="/Iyappa/">click here</a>.</p>
+</body>
+</html>
